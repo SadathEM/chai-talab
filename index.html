@@ -3,44 +3,80 @@
 <head>
   <meta charset="UTF-8">
   <title>Chai Talab ☕</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <header class="hero">
-    <h1>☕ Chai Talab</h1>
-    <p>Where every sip tells a story</p>
-    <button>Explore Our Chai</button>
+    <div class="hero-content" data-aos="fade-up">
+      <h1>☕ Chai Talab</h1>
+      <p>A Perfect Place for Chai Lovers</p>
+      <button>View Menu</button>
+    </div>
   </header>
 
-  <!-- About -->
-  <section class="about">
-    <h2>About Chai Talab</h2>
-    <p>
-      Chai Talab is a cozy tea spot serving authentic Indian chai.
-      From classic masala chai to refreshing ginger tea,
-      we brew happiness in every cup.
-    </p>
-  </section>
-
-  <!-- Menu -->
-  <section class="menu">
-    <h2>Our Chai Menu ☕</h2>
-    <div class="cards">
-      <div class="card">Masala Chai</div>
-      <div class="card">Ginger Chai</div>
-      <div class="card">Elaichi Chai</div>
-      <div class="card">Lemon Tea</div>
+  <!-- ABOUT -->
+  <section class="about" data-aos="fade-right">
+    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Tea Cup">
+    <div>
+      <h2>About Chai Talab</h2>
+      <p>
+        Chai Talab is not just tea, it’s an experience.
+        From traditional Indian masala chai to refreshing lemon tea,
+        we serve warmth in every sip.
+      </p>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- MENU -->
+  <section class="menu">
+    <h2 data-aos="fade-up">Our Special Chai ☕</h2>
+
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574">
+        <h3>Masala Chai</h3>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1523906630133-f6934a1ab2b9">
+        <h3>Ginger Chai</h3>
+      </div>
+
+      <div class="card" data-aos="zoom-in">
+        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc">
+        <h3>Elaichi Chai</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" data-aos="fade-up">
+    <h2>Visit Us ☕</h2>
+    <p>📍 Jagalur</p>
+    <p>☎️ 9XXXXXXXXX</p>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
-    <p>📍 Jagalur | ☎️ 9XXXXXXXXX</p>
-    <p>© 2026 Chai Talab</p>
+    <p>© 2026 Chai Talab | Brewed with ❤️</p>
   </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 
 </body>
 </html>
