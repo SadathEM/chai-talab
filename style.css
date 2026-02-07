@@ -1,20 +1,22 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(135deg, #fff3e0, #ffe0b2);
 }
 
 /* Header */
 .header {
+  position: relative;
   background: linear-gradient(90deg, #6f4e37, #8d6e63);
-  color: #fff;
+  color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px 80px;
+  overflow: hidden;
 }
 
 .header h1 {
-  font-size: 42px;
-  margin: 0;
+  font-size: 44px;
+  margin: 10px 0 5px;
 }
 
 .header p {
@@ -22,42 +24,17 @@ body {
   opacity: 0.9;
 }
 
-/* Menu Card */
-.menu {
-  max-width: 420px;
-  margin: -30px auto 40px;
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 14px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-.menu h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #6f4e37;
-}
-
-/* Menu Items */
-.item {
-  display: flex;
-  justify-content: space-between;
-  padding: 14px;
+/* Cup Image */
+.cup {
+  width: 90px;
   margin-bottom: 10px;
-  background: #fff8f0;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: transform 0.2s, background 0.2s;
 }
 
-.item:hover {
-  background: #ffe0b2;
-  transform: scale(1.02);
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #6f4e37;
-  color: #fff
+/* Steam Animation */
+.steam {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%
