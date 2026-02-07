@@ -1,84 +1,71 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fff1c1, #ffd59e);
 }
 
-/* Header */
-.header {
-  background: linear-gradient(90deg, #6f4e37, #8d6e63);
-  color: white;
+/* HERO */
+.hero {
+  background: linear-gradient(90deg, #6f4e37, #a47148);
+  color: #fff;
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
 }
 
-.cup {
-  width: 90px;
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
 }
 
-/* Menu */
+.hero p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.tag {
+  background: #ffcc80;
+  color: #4e342e;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* MENU */
 .menu {
-  max-width: 480px;
-  margin: -30px auto 30px;
-  background: white;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .menu h2 {
-  text-align: center;
-  color: #6f4e37;
-  margin-bottom: 20px;
+  color: #5d4037;
+  margin-bottom: 30px;
 }
 
-/* Menu Item */
-.item {
+.menu-grid {
   display: grid;
-  grid-template-columns: 50px 1fr auto;
-  align-items: center;
-  gap: 12px;
-  padding: 12px;
-  margin-bottom: 12px;
-  background: #fff8f0;
-  border-radius: 10px;
-  transition: transform 0.2s;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-.item img {
-  width: 40px;
-}
-
-.item:hover {
-  transform: scale(1.03);
-  background: #ffe0b2;
-}
-
-.special {
-  background: #ffd180;
-  font-weight: bold;
-}
-
-/* Address Section */
-.address {
-  text-align: center;
-  background: #fff;
-  margin: 0 auto 40px;
-  max-width: 480px;
+.card {
   padding: 20px;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  border-radius: 16px;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  transition: transform 0.3s;
 }
 
-.address h2 {
-  color: #6f4e37;
+.card img {
+  width: 50px;
 }
 
-/* Footer */
-footer {
-  background: #6f4e37;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  font-size: 14px;
+.card:hover {
+  transform: translateY(-6px) scale(1.05);
 }
+
+/* Card colors */
+.masala { background: #8d6e63; }
+.ginger { background: #f57c00; }
+.elaichi { background:
