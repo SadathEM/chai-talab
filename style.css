@@ -7,7 +7,7 @@ body {
 /* HERO */
 .hero {
   background: linear-gradient(90deg, #6f4e37, #a47148);
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 60px 20px;
 }
@@ -15,19 +15,6 @@ body {
 .hero h1 {
   font-size: 48px;
   margin: 0;
-}
-
-.hero p {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-.tag {
-  background: #ffcc80;
-  color: #4e342e;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 14px;
 }
 
 /* MENU */
@@ -43,29 +30,55 @@ body {
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-  max-width: 900px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
   margin: auto;
 }
 
 .card {
-  padding: 20px;
-  border-radius: 16px;
-  color: #fff;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.25);
   transition: transform 0.3s;
 }
 
-.card img {
-  width: 50px;
-}
-
 .card:hover {
-  transform: translateY(-6px) scale(1.05);
+  transform: translateY(-8px);
 }
 
-/* Card colors */
-.masala { background: #8d6e63; }
-.ginger { background: #f57c00; }
-.elaichi { background:
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 12px 0 5px;
+  color: #6f4e37;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* DETAILS */
+.details {
+  background: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+footer {
+  background: #4e342e;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
