@@ -1,19 +1,18 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fff7ed;
-  color: #3b2f2f;
+  background-color: #fff8f0;
 }
 
-header {
-  background: #8b4513;
+.header {
+  background-color: #8b4513;
   color: white;
   text-align: center;
-  padding: 30px;
+  padding: 40px 20px;
 }
 
 .menu {
-  max-width: 400px;
+  max-width: 450px;
   margin: 30px auto;
   background: white;
   padding: 20px;
@@ -28,7 +27,7 @@ header {
 .item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 12px 0;
   border-bottom: 1px dashed #ccc;
   font-size: 16px;
 }
